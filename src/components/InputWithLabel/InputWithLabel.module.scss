@@ -1,0 +1,12 @@
+.InputWithLabel  {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.Label {
+  font-size: 0.87rem;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  color: var(--text-basic);
+}

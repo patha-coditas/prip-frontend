@@ -1,0 +1,84 @@
+.Stepper {
+  display: flex;
+}
+
+.StepperTriggerList {
+  display: flex;
+  flex-direction: column;
+}
+
+.StepperItem {
+  display: flex;
+  align-items: start;
+  gap: 0.75rem;
+}
+
+.StepperItemIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  > img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  &[data-state="completed"] {
+    background-color: var(--success-600);
+  }
+
+  &[data-state="active"] {
+    background-color: var(--teal-500);
+  }
+
+  &[data-state="inactive"] {
+    background-color: color-mix(in srgb, var(--neutral) 76%, transparent 24%);
+  }
+}
+
+.DividerContainer {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Divider {
+  height: 2.5rem;
+  width: 2px;
+  background-color: var(--teal-600);
+}
+
+.StepperItemIconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.StepperItemTextContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.StepperItemText {
+  color: var(--teal-800);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.03125rem;
+  white-space: nowrap;
+}
+
+.StepperItemSubtext {
+  color: var(--text-hint);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}

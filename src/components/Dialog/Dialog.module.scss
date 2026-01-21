@@ -1,0 +1,122 @@
+.Dialog[data-relative-to="parent"] {
+  position: relative;
+}
+
+.DialogContent {
+  position: absolute;
+  
+  &[data-visible="false"] {
+    display: none;
+  }
+
+  &[data-relative-to="screen"][data-position="center"] {
+    position: fixed;
+    display: grid;
+    place-items: center; 
+  }
+
+  &[data-relative-to="screen"][data-position="left"] {
+    position: fixed;
+    display: grid;
+    justify-content: start;
+    align-content: center;
+  }
+
+  &[data-relative-to="screen"][data-position="right"] {
+    position: fixed;
+    display: grid;
+    justify-content: end;
+    align-content: center;
+  }
+
+  &[data-relative-to="screen"][data-position="top"] {
+    position: fixed;
+    display: grid;
+    justify-content: center;
+    align-content: start;
+  }
+
+  &[data-relative-to="screen"][data-position="bottom"] {
+    position: fixed;
+    display: grid;
+    justify-content: center;
+    align-content: end;
+  }
+
+  &[data-relative-to="screen"][data-position="top-left"] {
+    position: fixed;
+    display: grid;
+    justify-content: start;
+    align-content: start;
+  }
+
+  &[data-relative-to="screen"][data-position="top-right"] {
+    position: fixed;
+    display: grid;
+    justify-content: end;
+    align-content: start;
+  }
+
+  &[data-relative-to="screen"][data-position="bottom-left"] {
+    position: fixed;
+    display: grid;
+    justify-content: start;
+    align-content: end;
+  }
+
+  &[data-relative-to="screen"][data-position="bottom-right"] {
+    position: fixed;
+    display: grid;
+    justify-content: end;
+    align-content: end;
+    color: yellow;
+  }
+
+
+  &[data-relative-to="parent"][data-position="left"] {
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &[data-relative-to="parent"][data-position="right"] {
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &[data-relative-to="parent"][data-position="top"] {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &[data-relative-to="parent"][data-position="bottom"] {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &[data-relative-to="parent"][data-position="top-left"] {
+    bottom: 100%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &[data-relative-to="parent"][data-position="top-right"] {
+    bottom: 100%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  &[data-relative-to="parent"][data-position="bottom-left"] {
+    top: 100%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &[data-relative-to="parent"][data-position="bottom-right"] {
+    top: 110%;
+    right: 0;
+  }
+}

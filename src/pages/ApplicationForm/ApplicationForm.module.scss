@@ -1,0 +1,19 @@
+.Form {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.FormSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.FormHeading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--text-basic);
+}

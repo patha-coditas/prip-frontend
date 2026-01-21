@@ -1,0 +1,45 @@
+.Button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.87rem;
+  line-height: 1.25;
+  letter-spacing: 0.25px;
+  font-weight: 500;
+  color: var(--teal);
+
+  &[data-variant="primary"] {
+    background-color: var(--primary);
+  }
+
+  &[data-variant="secondary"] {
+    background-color: var(--secondary);
+  }
+
+  &[data-variant="outline"] {
+    background-color: transparent;
+    border: 1px solid var(--primary);
+  }
+
+  &[data-variant="success"] {
+    background-color: var(--success);
+    color: #fff;
+  }
+
+  &[data-variant="ghost"] {
+    background-color: transparent;
+  }
+
+  &[data-size="sm"] {
+    padding: 0.5rem 0.75rem;
+  }
+
+  &[data-size="md"] {
+    padding: 0.75rem 1rem;
+  }
+
+  &[data-size="lg"] {
+    padding: 1rem 1.25rem;
+  }
+}
